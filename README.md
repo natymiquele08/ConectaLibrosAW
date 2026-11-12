@@ -36,9 +36,11 @@ Todo el acceso a la base de datos se hace exclusivamente a través de stored pro
 
 ## Cómo ejecutarlo
 
-1. Abrir SQL Server Management Studio y ejecutar el script que está en la carpeta `Base de datos`. Crea la base de datos, las tablas, los stored procedures y carga datos de prueba.
+1. Abrir SQL Server Management Studio y ejecutar el script que está en la carpeta `Base de datos`. Crea la base de datos `ObligatorioBD`, las tablas, los stored procedures y carga datos de prueba.
 2. Abrir la solución `ConectaLibrosAW` con Visual Studio.
-3. En el `Web.config` del proyecto `Sitio`, ajustar la cadena de conexión para que apunte a tu instancia de SQL Server.
+3. Verificar la cadena de conexión, que está definida en la capa `Persistencia`. Debe apuntar a tu instancia de SQL Server y a la base `ObligatorioBD`, por ejemplo:
+   `Data Source=.;Initial Catalog=ObligatorioBD;Integrated Security=True`
+   Si tu SQL Server es una instancia con nombre (por ejemplo SQL Server Express), cambiar `Data Source=.` por `Data Source=.\SQLEXPRESS`.
 4. Establecer `Sitio` como proyecto de inicio y ejecutar (F5).
 
 ## Autora
