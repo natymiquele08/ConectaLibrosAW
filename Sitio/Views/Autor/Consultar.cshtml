@@ -1,0 +1,36 @@
+﻿@model EntidadesCompartidas.Autor
+
+
+<h2>Consultar Autor</h2>
+<p>@ViewBag.Mensaje</p>
+<p>@Html.ActionLink("Volver al listado", "Listado")</p>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @("Codigo")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoInternoAutor)
+        </dd>
+
+        <dt>
+            @("Nombre")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreAutor)
+        </dd>
+
+        <dt>
+            @("Fecha de Nacimiento")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaNacimiento)
+        </dd>
+
+    </dl>
+</div>

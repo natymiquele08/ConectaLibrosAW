@@ -1,0 +1,47 @@
+﻿@model IEnumerable<EntidadesCompartidas.Autor>
+
+<div class="container-titulo-crud">
+    <div>
+        <h5 class="titulo-crud">CONECTALIBROS</h5>
+        <h2>CRUD Autores</h2>
+        <p>Consulta, modifica y administra los autores de ConectaLibros.</p>
+        <p>@ViewBag.Mensaje</p>
+    </div>
+
+    <div>
+        <button class="btn-agregar">
+            <!--ponerlo a la derecha si se puede-->
+            @Html.ActionLink("+ Agregar Autor", "Agregar")
+        </button>
+    </div>
+</div>
+<table class="table">
+    <tr>
+        <th> 
+            @("Codigo")
+        </th>
+        <th>
+             @("Nombre")
+        </th>
+       <!--Saque la fecha de nacimiento, para que se vea solo en "Consultar"-->
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoInternoAutor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreAutor)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Consultar", "Consultar", new { pCodigoInternoAutor = item.CodigoInternoAutor }, new {@class= "btn btn-success" }) 
+            @Html.ActionLink("Modificar", "Modificar", new { pCodigoInternoAutor = item.CodigoInternoAutor }, new { @class = "btn btn-info"  }) 
+            @Html.ActionLink("Eliminar", "Eliminar", new { pCodigoInternoAutor = item.CodigoInternoAutor }, new { @class = "btn btn-danger"  })
+        </td>
+    </tr>
+}
+
+</table>

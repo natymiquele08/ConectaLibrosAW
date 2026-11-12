@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="EntidadesCompartidas/EntidadesCompartidas.csproj" Id="f3db66d4-6dda-460f-a14f-0b608bd0467e" />
+  <Project Path="Logica/Logica.csproj" Id="2ef2933d-75cd-40d8-8518-c35b90171407" />
+  <Project Path="Persistencia/Persistencia.csproj" Id="e08afae0-1770-4e69-9da4-e2d673f0606b" />
+  <Project Path="Sitio/Sitio.csproj" Id="de609e12-2087-462e-bdf8-7bd53939c969" />
+</Solution>

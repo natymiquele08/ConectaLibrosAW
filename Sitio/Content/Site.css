@@ -1,0 +1,63 @@
+﻿* {
+    font-family: Arial;
+   
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start; 
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+    padding: 40px; 
+    max-width: 500px; 
+    margin: 30px auto; 
+}
+
+/*botones de agregar*/
+.btn-agregar {
+    border: solid;
+    padding: 10px;
+    border-color: blue;
+    border-radius: 20px;
+}
+
+/*DIV de cabezal de los CRUD*/
+.container-titulo-crud {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;   
+    padding-bottom: 15px
+}
+/*h5 "CONECTALIBROS"*/
+.titulo-crud {
+    color: darkblue;
+    font-weight: bold;
+}
+
+
+
+
