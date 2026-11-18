@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EntidadesCompartidas.Libreria>
+
+<div class="container-titulo-crud">
+    <div>
+        <h5 class="titulo-crud">CONECTALIBROS</h5>
+        <h2>CRUD Librerias</h2>
+        <p>Consulta, modifica y administra las librerias de ConectaLibros.</p>
+        <p>@ViewBag.Mensaje</p>
+    </div>
+
+    <div>
+        <p>
+
+            @Html.ActionLink("+ Agregar Libreria", "Agregar", null, new { @class = "btn btn-primary" })
+        </p>
+    </div>
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @("RUT")
+        </th>
+        <th>
+            @("Nombre")
+        </th>
+        
+        
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RUT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreLibreria)
+        </td>
+        
+        
+       
+        <td>
+            @Html.ActionLink("Consultar", "Consultar", new { pRut= item.RUT }, new { @class = "btn btn-success" }) 
+            @Html.ActionLink("Modificar", "Modificar", new { pRut = item.RUT }, new { @class = "btn btn-info" }) 
+            @Html.ActionLink("Delete", "Delete", new { pRut = item.RUT }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

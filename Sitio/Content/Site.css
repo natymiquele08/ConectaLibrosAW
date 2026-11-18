@@ -38,12 +38,12 @@ textarea {
 }
 
 /*botones de agregar*/
-.btn-agregar {
+/*.btn-agregar {
     border: solid;
     padding: 10px;
     border-color: blue;
     border-radius: 20px;
-}
+}*/
 
 /*DIV de cabezal de los CRUD*/
 .container-titulo-crud {

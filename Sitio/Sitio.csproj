@@ -117,6 +117,9 @@
     <Content Include="Views\Autor\Consultar.cshtml" />
     <Content Include="Views\Autor\Modificar.cshtml" />
     <Content Include="Views\Autor\Eliminar.cshtml" />
+    <Content Include="Views\Libreria\Listado.cshtml" />
+    <Content Include="Views\Libreria\Agregar.cshtml" />
+    <Content Include="Views\Libreria\Modificar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -128,7 +131,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Editorial\" />
-    <Folder Include="Views\Libreria\" />
     <Folder Include="Views\Libro\" />
     <Folder Include="Views\Solicitud\" />
   </ItemGroup>

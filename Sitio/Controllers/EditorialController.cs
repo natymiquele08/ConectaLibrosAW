@@ -9,9 +9,6 @@ namespace Sitio.Controllers
     public class EditorialController : Controller
     {
         // GET: Editorial
-        public ActionResult Index()
-        {
-            return View();
-        }
+       
     }
 }

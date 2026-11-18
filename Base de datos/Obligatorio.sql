@@ -403,14 +403,14 @@ go
 
 --Buscar libreria 
 create or alter proc BuscarLibreria
-@RUTLibreria varchar(12)
+@RUTLibrerias varchar(12)
 as
 begin
-	select * from Librerias where RUTLibrerias = @RUTLibreria
+	select * from Librerias where RUTLibrerias = @RUTLibrerias
 end
 go
 
-exec BuscarLibreria '123456789123' --ejemplo propio
+exec BuscarLibreria '223335555566' --ejemplo propio
 go
 
 --C) Agregar LIBRO
